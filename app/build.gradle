@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.majeur.applicationsinfo"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 7
+        versionName "1.6"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
